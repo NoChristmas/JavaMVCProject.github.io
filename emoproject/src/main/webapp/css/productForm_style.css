@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'maple';
+    src: url('../fonts/maple_light.woff') format('woff');
+}
+@font-face{
+	font-family: 'maple';
+    src: url('../fonts/maple_bold.woff') format('woff');
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	font-family : 'NEXON Lv1 Gothic OTF';
+}
+
+form{
+	width: 740px;
+	margin: 30px auto;
+	padding: 30px;
+	background-color: white;
+	
+	border:1px solid #a6a6a6;
+	border-radius: 20px;
+	
+}
+ul{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+.li-sty li{
+	margin: 5px 0px;
+}
+
+
+li.dis-in{
+	display: inline-block;
+}
+.box-half span{
+	display: inline-block;
+}
+form label{
+	clear:both;
+	display: inline-block;
+	
+}
+.box-left{
+	width: 150px;
+}
+.box-right{
+	width: 540px;
+}
+.right-po{
+	position: relative;
+	left: 160px; 
+	width: 530px;
+	margin: 5px 1px;
+}
+.box-half{
+	width: 365px;
+}
+li label{
+	vertical-align: top;
+}
+form textarea{
+	width: 540px;
+	height: 250px;
+	resize: none;
+}
+
+.form-basic input[type="text"],input[type="number"], textarea{
+	border-radius: 4px;
+	border: 1px solid rgb(201,201,201);
+}
+
+/*---------*/
+
+.page{
+	width: 1050px;
+	margin: 0px auto;
+	padding: 0px;
+}
+.page-content{
+	width: 1050px;
+	margin: 0px auto;
+	padding: 0px;;
+}
+
+form#search_form{
+	border:none;
+}
+ul.search{
+	width:340px;
+	list-style:none;
+	padding:0;
+	margin:0 auto;
+}
+ul.search li{
+	margin:0 0 9px 0;
+	padding:0;
+	display:inline;
+}
+.list-space{
+	margin-bottom:10px;
+}
+table{
+	width:100%;
+	border:1px solid #000;
+	border-collapse:collapse;
+	margin-top:5px;
+}
+table td, table th{
+	border:1px solid #000;
+	padding:5px;
+}
+
+/* 공통 정렬
+------------------*/
+.align-center{
+	text-align:center;
+}
+.align-right{
+	text-align:right;
+}
+/*----상세 페이지--*/
+.page-detail{
+	display: flex;
+	flex-direction: column;	/*세로정렬*/
+}
+.detail-top{
+	display: flex;
+	flex-direction: row;
+}
+.top-content{
+	display: flex;
+	flex-direction: column;
+}
+/* .top-box{
+	display: flex;
+	flex-direction: row;
+} */
+
+#detail-info{
+	height: 600px;
+}
+#detail-reiview{
+	height: 400px;
+}
+#detail-QA{
+	height: 400px;
+}
+/**/

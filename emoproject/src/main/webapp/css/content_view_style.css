@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'maple';
+    src: url('../fonts/maple_light.woff') format('woff');
+}
+@font-face{
+	font-family: 'maple';
+    src: url('../fonts/maple_bold.woff') format('woff');
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	font-family : 'NEXON Lv1 Gothic OTF';
+}
+.main-contents {
+	
+	width:1600px;
+	margin:0 auto;
+	display:flex;	
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top:20px;
+}
+
+#total_count {
+	width:1600px;
+	display:flex;
+	justify-content: flex-end;
+	margin-bottom:40px;
+	margin-right:30px;
+}
+
+#search_count {
+	width:1600px;
+	display:flex;
+	justify-content: flex-end;
+	margin-bottom:40px;
+	margin-right:30px;
+}
+.contents-head {
+	display : flex;
+	width : 1600px;
+	height : 100px;
+	justify-content: center;
+	align-items:center;
+	font-size : 50px;
+	margin-bottom:20px;
+	
+}
+.contents-head span {
+	font-size : 20px;
+	margin-top : 20px;
+	margin-left:10px;
+	
+}
+#output {
+	width:1600px;
+	display:flex;	
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top:20px;
+	
+}
+
+.product-nums {
+	display:flex;
+	flex-direction:column;
+	width:400px;
+	height : 650px;
+	font-size : 18px;
+	overflow: hidden;
+	margin-bottom:50px;
+	align-items: center;
+	text-align:center;
+}
+
+
+.product-nums img {
+	
+	width: 350px;
+	margin-left:25px;
+	margin-right:25px;
+    height: auto;
+    max-width: 350px;
+    object-fit: cover;
+    margin-bottom:20px;
+    overflow:hidden;
+    
+}
+
+.product-nums img:hover {
+	transform: scale(0.95);
+  	transition-duration: 0.5s;
+}
+
+.product-nums a {
+	position:relative;
+
+}
+.sold-out-image {
+	position:absolute;
+	top: 47.5%;
+ 	left: 175px;
+ 	transform: translate(-50%, -50%);
+    /*border-radius: 10px;*/
+    z-index:1;
+}
+
+.sold-out-image:hover {
+	pointer-events: none;
+}
+.product_result {
+	width:350px;
+	display:flex;
+	flex-direction:column;
+	align-items : flex-start;
+	margin-left:50px;
+	margin:0;
+}
+
+.product_discount {
+	color:#E19B50;
+	font-weight:600;
+	margin:0;
+}
+
+.product_discount strike {
+	margin:0;
+}
+.product-nums span {
+	margin:0;
+}
+.product-nums p {
+	margin:0;
+}
+.search-navigator {
+	width : 1600px;
+	height:40px;
+	display:flex;
+}
+
+.search-navigator ul {
+	width:1600px;
+	height:40px;
+	display:flex;
+	margin-top:0;
+	justify-content: flex-end;
+	align-items:center;
+}
+
+.search-navigator ul li {
+	font-size:15px;
+	margin-right:40px;
+	list-style-type:none;
+}
+
+.search-navigator ul li:hover, .search-navigator ul li.active {
+	cursor: pointer;
+	color:#E19B50;
+}
+
+.search-navigator ul li.active {
+  /* 활성화된 상태일 때의 스타일을 적용합니다 */
+  /* 예시로 배경색과 텍스트 색상을 변경해보겠습니다 */
+  color:#E19B50;
+}
+
+#paging-box-main {
+	margin:0 auto;
+	width:1600px;
+	height:50px;
+	margin-bottom:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+#paging-box-main span {
+	margin:0;
+	font-size:30px;
+	width:50px;
+	height:50px;
+	
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	color:#E19B50;
+}
+
+#paging-box-main b {
+	width:50px;
+	height:50px;
+	margin-right:50px;
+	margin-left:50px;
+	
+}
+
+#paging-box-main a {
+	margin:0;
+	width:50px;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	list-style-type:none;
+	text-align:center;
+	font-size:30px;
+	margin-right:50px;
+	margin-left:50px;
+	
+}
+
+#paging-box-main span:hover, #paging-box-main b:hover{
+	color:#E19B50;
+}
+
+#paging-box {
+	width:1600px;
+	height:50px;
+
+	margin-bottom:50px;
+}
+
+
+#paging-box ul {
+	margin:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+}
+#paging-box ul li {
+	margin:0;
+	width:50px;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	list-style-type:none;
+	
+	text-align:center;
+	font-size:30px;
+	margin-right:50px;
+	margin-left:50px;
+}
+
+#paging-box ul li:hover {
+	cursor : pointer;
+	color:#E19B50;
+}
+
+.horizon-bar-01 {
+	width:1600px;
+	border: solid 1.5px black;
+}
+
+/*admin 스타일*/
+.admin-main-title {
+	width:1600px;
+	margin:0 auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:40px;
+	text-align:center;
+	padding : 50px;
+}
+.admin-sales-head-box {
+	width:1600px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:25px;
+}
+.admin-sales-head-box span {
+	width:300px;
+	display : flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding:50px;
+	
+}
+.admin-product-box {
+	width:1600px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: no-wrap;
+	font-size:25px;
+}
+.admin-product-box span {
+	width:300px;
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	font-size:16px;
+	padding:10px;
+}
